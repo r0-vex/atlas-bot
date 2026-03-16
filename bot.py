@@ -256,7 +256,7 @@ async def save_subject(update, context):
     context.user_data["subject"] = update.message.text
 
     await update.message.reply_text(
-        "Time (HH:MM)",
+        "Time (HH:MM) (24 Hour Format)",
         reply_markup=reply_markup
     )
 
